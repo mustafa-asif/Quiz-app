@@ -86,6 +86,7 @@ renderQuestion();
     questionIndex++;
     // console.log(questionIndex);
     renderQuestion();
+    stopTimer();
     
     setTimer();
    }
@@ -98,6 +99,7 @@ renderQuestion();
         score++;
     }
     nextQuestion();
+    stopTimer();
     setTimer();
     
 
@@ -169,6 +171,10 @@ setTimer();
 
 function stopTimer()
 {
+  s=1;
+  m=2;
+  min.innerHTML=m;
+  sec.innerHTML=s;
   clearInterval(interval);
 }
 // stopTimer();
